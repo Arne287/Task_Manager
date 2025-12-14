@@ -30,15 +30,21 @@ task_manager/
 
 
 git clone https://github.com/Arne287/Task_Manager/tree/main.git
+
 cd Task_Manager
 
 Virtuele omgeving aanmaken
-py -m venv venv
+python -m venv venv
+
 venv\Scripts\Activate
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
 Settings bestand aanmaken:
+
 config/settings.py
+
 DATABASE_PATH = "data/tasks.db"
 
 
@@ -46,6 +52,7 @@ DATABASE_PATH = "data/tasks.db"
 Een taak toevoegen:
 
 python main.py --add "Mijn eerste taak"
+
 python main.py --list
 
 Voorbeeld Output:
@@ -64,6 +71,7 @@ python main.py --export
 
 
 Dit genereert een bestand zoals:
+
 tasks_report.csv
 
 
