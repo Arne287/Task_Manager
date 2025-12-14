@@ -33,3 +33,4 @@ class Database:
         cursor.execute(query, params)
         self.connection.commit()
         return cursor
+
