@@ -30,7 +30,8 @@ task_manager/
 
 Voer de volgende stappen uit om deze opdracht te testen:
 
-git clone https://github.com/Arne287/Task_Manager/tree/main.git
+git clone https://github.com/Arne287/Task_Manager.git
+
 
 cd Task_Manager
 
