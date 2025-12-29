@@ -41,10 +41,6 @@ python -m venv venv
 venv\Scripts\Activate
 
 
-Settings bestand aanmaken:
-
-config/settings.py
-
 Database toevoegen:
 
 Maak een folder aan dat data heet en plaats daarin tasks.db
