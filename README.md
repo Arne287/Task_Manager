@@ -28,22 +28,26 @@ task_manager/
 ├── requirements.txt
 ├── .gitignore
 
+Voer de volgende stappen uit om deze opdracht te testen:
 
 git clone https://github.com/Arne287/Task_Manager/tree/main.git
 
 cd Task_Manager
 
-Virtuele omgeving aanmaken
+Virtuele omgeving aanmaken:
+
 python -m venv venv
 
 venv\Scripts\Activate
-
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
 Settings bestand aanmaken:
 
 config/settings.py
+
+Database toevoegen:
+
+Maak een folder aan dat data heet en plaats daarin tasks.db
 
 DATABASE_PATH = "data/tasks.db"
 
@@ -65,7 +69,7 @@ Taak markeren als voltooid:
 python main.py --done 1
 
 
-CSV rapport exporteren
+CSV rapport exporteren:
 
 python main.py --export
 
